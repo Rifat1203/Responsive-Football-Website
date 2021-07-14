@@ -1,3 +1,251 @@
+/* fonts 
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&family=Roboto+Slab:wght@400;500&display=swap');
+/* commom style */
+body{
+    
+    font-family: 'Oswald', sans-serif;
+    margin: 0px;
+    flex-wrap: wrap;
+    
+    
+}
+/* header part */
+.header-part{
+    width: 100%;
+    height: 512px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    justify-content: center;
+    align-items: center;
+
+    background-color: blueviolet;
+    margin-bottom: 50px;
+   
+   
+}
 h1{
-    color: blue;
+    font-weight: 900;
+    font-size: 50px;
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+.watch a{
+    text-decoration: none;
+    font-size: 15px;
+    background-color: brown;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+small{
+    padding-left: 5px;
+}
+.banner{
+    width: 100%;
+    overflow: hidden;
+}
+.banner img{
+    width: 80%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+}
+.banner img:hover{
+    transform: scale(0.8);
+    transition: transform 2s ease-in-out 1s;
+}
+.copa-america{
+   width: 485px;
+   height: 312px;
+   padding-left: 80px;
+   padding-top: 100px;
+}
+/* ---------
+   main part
+--------------- */
+main{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    
+}
+
+/*----------------
+ player common styles
+----------------- */
+
+.player img{
+    width: 300px;
+    height: 256px;
+    margin-bottom: 10px;
+    
+}
+
+.about{
+    width: 280px;
+    height: 140px;
+}
+h2{
+    margin-bottom: 10px;
+    font-weight: 900;
+    color: black;
+}
+ p{
+    color: gray;
+}
+/*-----------------------------
+      players profile
+----------------------------- */
+
+
+.neymar, .messi, .ronaldo, .dybala, .ozil, .icardi, .dimaria, .mbappe, .salah{
+    width: 330px;
+    height: 460px;
+    background-color: white;
+    box-shadow: 5px 5px 10px gray;
+    padding: 10px 10px 0px 10px;
+    margin-left: 23px;
+    border-radius: 5px;
+    
+}
+
+
+.profile-1, .profile-2, .profile-3{
+    width: 1020px;
+    height: 474px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    background-color: whitesmoke;
+}
+ 
+
+/* ----------------
+    section part
+------------------ */
+.team{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 80px;
+   }
+.group-a h2, .group-b h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 0px;
+}
+.group-a{
+    width: 450px;
+    height: 200px;
+    background-color: whitesmoke;
+    color: dimgray;
+    margin-left: 80px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+   
+}
+.group-b{
+    width: 450px;
+    height: 200px;
+    background-color: whitesmoke;
+    color: dimgray;
+    margin-left: 80px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+/*-----------------
+   footer part
+------------------ */
+
+footer{
+    width: 525px;
+    height: 213px;
+    text-align: center;
+    margin-left: 350px;
+    box-shadow: 5px 5px 10px gray ;
+    }
+
+.logo img{
+    width: 450px;
+    height: 110px;
+   
+    
+}
+.social-media{
+    text-align: center;
+    font-size: 30px;
+   
+}
+
+.copyright{
+    text-align: center;
+}
+
+/*-------------
+ media quaries
+ -------------*/
+
+ /* mobile devices */
+
+ @media only screen and (max-width:688px) {
+    .header-part{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        flex-direction: column;
+    }
+    main{
+        grid-template-columns: repeat(1, fr);
+        width: 100%;
+        flex-direction: column;
+    }
+    section{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        flex-direction: column;
+    }
+    footer{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        flex-direction: column;
+        
+    }
+
+    
+
+}
+/*----------
+ tab devicew
+----------- */
+
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .header-part{
+    
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        flex-direction: column;
+    }
+    main{
+        grid-template-columns: repeat(2, fr);
+        width: 100%;
+        flex-direction: column;
+    }
+    section{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        flex-direction: column;
+    }
+    footer{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        flex-direction: column;
+        
+    }
+
+    
+    
 }
